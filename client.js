@@ -12,6 +12,12 @@ const connect = function () {
     console.log(data);
   })
 
+  conn.on("connect", (connect) => {
+    console.log("Successfully connected to game server.")
+  })
+
+  conn.write('Name: BRN');
+
   return conn;
 };
 
