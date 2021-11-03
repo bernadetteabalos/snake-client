@@ -23,6 +23,9 @@ const setupInput = function (conn) {
       if (key === 'd') {
         conn.write('Move: right');
       }
+      if (key === 'j') {
+        conn.write('Say: Zoomers');
+      }
   })};
 
 
